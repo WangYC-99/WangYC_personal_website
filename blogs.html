@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+
+  <title>WangYC-personal</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="王元淳 WangYC_99 西北工业大学">
+  <meta name="keywords" content="WangYC_99, Wang Yuanchun, Yuanchun Wang, WangYC, Frederick Wang, Frederick the Fox, 王元淳, wyc, NWPU, wangyuanchun">
+  <meta name="author" content="WangYC_99 wyc99@mail.nwpu.edu.cn" />
+
+  <link rel="stylesheet" href="w3.css">
+
+  <style>
+  .w3-sidebar a {font-family: "Roboto", sans-serif}
+  body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+  </style>
+
+  <link rel="icon" type="image/png" href="images/icon-trans.png">
+
+  <script src="jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+
+</head>
+
+<body class="w3-content w3-light-gray w3-border-black" style="max-width:900px;">
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-bar-block w3-dark-gray w3-collapse w3-top w3-right" style="z-index:3;width:150px" id="mySidebar">
+    <div class="w3-container w3-display-container w3-padding-16">
+      <h3><b>WangYC</b></h3>
+      <img style="width: 80%;max-width: 320px" alt="profile photo" src="images/icon-trans.png">
+    </div>
+    <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
+      <a href="./index.html" class="w3-bar-item w3-button">Home</a>
+      <a href="./projects.html" class="w3-bar-item w3-button">Projects</a>
+      <a href="./blogs.html" class="w3-bar-item w3-button">Blogs</a>
+      <a href="./life.html" class="w3-bar-item w3-button">Life</a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-bar w3-top w3-hide-large w3-dark-gray w3-xlarge">
+    <div class="w3-bar-item w3-padding-24">WangYC</div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"  style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
+    </div>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:150px">
+
+    <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+
+    <!-- The News Section -->
+    <div class="w3-container w3-padding-64" id="news">
+      <h2>Blogs</h2>
+         <p style = "width: 100%;" class="w3-text-blue">I'm preparing to move my bogs to this page from CSDN and my Notes. Comming Soon! for now please read from CSDN ~</p>
+         <p></p>
+         <p><li> <a href="https://blog.csdn.net/FOX_YC_Wang/article/details/116544159">realsenseD435、D435i 获取点云数据获取并实时显示 </a>.</li></p>
+         <p><li> <a href="https://blog.csdn.net/FOX_YC_Wang/article/details/115553733">ubuntu关机重启等待90秒问题解决</a>.</li></p>
+         <p><li> <a href="https://blog.csdn.net/FOX_YC_Wang/article/details/115531471">Ubuntu ZSH + oh-my-zsh 配置方法</a>.</li></p>
+         <p><li> <a href="https://blog.csdn.net/FOX_YC_Wang/article/details/108337029">git基础教程</a>.</li></p>
+         <p><li> <a href="https://blog.csdn.net/FOX_YC_Wang/article/details/107704158">微信开发者工具&WXML+WXSS入门教程</a>.</li></p>
+         <p><li> <a href="https://blog.csdn.net/FOX_YC_Wang/article/details/107056903">【出圈】分镜制作方法</a>.</li></p>
+                
+   
+     </div>
+
+  <!-- The Home Section -->
+  <div class="w3-container w3-center w3-padding-64" id="home">
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+    </p>
+  </div>
+
+
+
+  <!-- Bottom Section-->
+    <div class="w3-gray w3-padding-24 w3-center" >
+        <p class="w3-opacity ">copyright wyc99@mail.nwpu.edu.cn | 冀ICP备案号：</p>
+        <p class="w3-opacity ">Powered by w3.css</p>
+    </div>
+
+  </div>
+  
+  <script>
+  // Accordion 
+  function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  
+  // Click on the "Jeans" link on page load to open the accordion for demo purposes
+  document.getElementById("myBtn").click();
+  
+  
+  // Open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+   
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+  </script>
+
+</body>
+
+</html>
