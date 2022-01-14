@@ -52,23 +52,23 @@
 
 </head>
 
-<body class="w3-content w3-light-gray w3-border-black" style="max-width:900px">
+<body class="w3-content w3-light-gray w3-border-black" style="max-width:900px;">
   <!-- Sidebar/menu -->
-  <nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top w3-right" style="z-index:3;width:150px" id="mySidebar">
+  <nav class="w3-sidebar w3-bar-block w3-dark-gray w3-collapse w3-top w3-right" style="z-index:3;width:150px" id="mySidebar">
     <div class="w3-container w3-display-container w3-padding-16">
       <h3><b>WangYC</b></h3>
       <img style="width: 80%;max-width: 320px" alt="profile photo" src="images/icon-trans.png">
     </div>
     <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
-      <a href="./index.html" class="w3-bar-item w3-button">Home</a>
-      <a href="./projects.html" class="w3-bar-item w3-button">Projects</a>
+      <a href="./home.html" class="w3-bar-item w3-button">Home</a>
+      <a href="./index.html" class="w3-bar-item w3-button">Projects</a>
       <a href="./blogs.html" class="w3-bar-item w3-button">Blogs</a>
       <a href="./life.html" class="w3-bar-item w3-button">Life</a>
     </div>
   </nav>
 
   <!-- Top menu on small screens -->
-  <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <header class="w3-bar w3-top w3-hide-large w3-dark-gray w3-xlarge">
     <div class="w3-bar-item w3-padding-24">WangYC</div>
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"  style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
     </div>
@@ -83,47 +83,64 @@
     <!-- Push down content on small screens -->
     <div class="w3-hide-large" style="margin-top:83px"></div>
 
-    <!-- The Projects Section -->
+    <!-- The News Section -->
+    <div class="w3-container w3-padding-64" id="news">
+      <h1>Blogs</h1>
+        <p class="w3-serif">“Stay hungry, stay foolish.” —— Steve Jobs</p>
 
-    <div class="w3-container w3-padding-32" id="projects">
-      <h2>Projects</h2> 
-      <p>
-        I've participated in <a href="https://www.robomaster.com/">DJI Robomaster Competition</a>, <a href="https://cy.ncss.cn/index.html"> National Training Program of Innovation and Entrepreneurship for Undergraduates</a>, some course_based researches and other projects.
-      </p>
-      <h5>&nbsp</h5>
+        <h4><li>2022</li></h4>
+        <p><a href="./GCN原理及实践.html">[Graph] GCN原理及实践</a></p>
+        <p><a href="./Knowledge Graphcs知识图谱.html">[Kowledge Graph] Knowledge Graphcs知识图谱</a></p>
+        <p></p>
 
-        <!-- A-Tune -->
-        <h4><li>Tuning Pytorch Training with HUAWEI OpenEuler A-Tune engine</li></h4>
-        <img style="max-width:700px; width: 85%;" class="w3-padding-16" src="images/cifar.png"> 
-        <img style="max-width: 700px; width: 85%;" src="/images/a-tune-huawei.png">
-        <p class="w3-justify">
-        <a style="color: #447ec9" href="https://github.com/Frederick-the-Fox/CIFAR-10_train">Training without A-Tune</a> | <a style="color: #447ec9" href="https://github.com/Frederick-the-Fox/a-tune_pytorch_train">training using A-Tune</a>
-        </p>
-        <p class="w3-justify">
-          &nbsp&nbspA-Tune is an OS tuning engine based on AI. I'm extremely surprised by this idea of using operating system to tuning services for the Users. I made an example of using A-Tune to tuning the <a class="w3-text-blue">batch-size, optimizer and learning-rate</a> of the pytorch training (taking the <a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR-10 DATASET</a> as an example). The result is quite cool that it outperforms the result without tuning by 6.35% in 30 turns.
-        </p> 
+        <p style = "width: 100%;" class="w3-text-blue">I'm preparing to move my bogs to this page from CSDN and my Notes. Comming Soon! for now please read from CSDN ~</p>
+        <p></p>
 
-        <h1>&nbsp</h1>
+        <p> <a href="https://blog.csdn.net/FOX_YC_Wang/article/details/116544159">realsenseD435、D435i 获取点云数据获取并实时显示 </a>.</p>
+        <p> <a href="https://blog.csdn.net/FOX_YC_Wang/article/details/115553733">ubuntu关机重启等待90秒问题解决</a>.</p>
+        <p> <a href="https://blog.csdn.net/FOX_YC_Wang/article/details/115531471">Ubuntu ZSH + oh-my-zsh 配置方法</a>.</p>
+        <p> <a href="https://blog.csdn.net/FOX_YC_Wang/article/details/108337029">git基础教程</a>.</p>
+        <p> <a href="https://blog.csdn.net/FOX_YC_Wang/article/details/107704158">微信开发者工具&WXML+WXSS入门教程</a>.</p>
+        <p> <a href="https://blog.csdn.net/FOX_YC_Wang/article/details/107056903">【出圈】分镜制作方法</a>.</p>
+              
+   
+     </div>
 
-        <!-- RM -->
-        <h4><li>DJI RoboMaster | Engineer Robot Automatic Target Recognition and Pose Refining</li></h4>
-        <img style="width: 85%; max-width: 300px;"src="images/mine.gif"> &nbsp&nbsp <img style="width: 85%; max-width: 380px;"src="images/detect.jpg">
-        <p class="w3-justify">
-          <a style="color: #447ec9" href="https://github.com/Frederick-the-Fox/realsense-pcl">real-time PCL Code Repositry</a>
-        </p>
-        <p class="w3-justify">
-          &nbsp&nbspDJI RoboMaster is truly an amazing competition for collegers. I believe the experience preparing for this competition with my teamates will absolutly be the most unforgetable ones during my life time. In this project, I use <a class="w3-text-red">Computer Vision</a> algorithms to regognize the featured items in the environment(the golden block in the picture) and use <a class="w3-text-red">Robot Control</a> algorithms and <a class="w3-text-red">ICT</a> designing to let the robot automatically refine its pose to grab the golden block. 
-        </p> 
+  <!-- The Home Section -->
+  <div class="w3-container w3-center w3-padding-64" id="home">
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+    </p>
+  </div>
 
-        <h1>&nbsp</h1>
-
-        <!-- RM -->
-        <h4><li>More is comming soon</li></h4>
-
-        
-  
-    </div>
-
+  <!-- Bottom Section-->
+  <div class="w3-gray w3-padding-24 w3-center" >
+    <p class="w3-opacity ">copyright©️2021 wyc99@mail.nwpu.edu.cn AllRightsReserved.</p>
+    <p class="w3-opacity "><a href="https://beian.miit.gov.cn/">冀ICP备2022000563</a>｜ Powered by w3.css</p>
+  </div>
   
   <script>
   // Accordion 
