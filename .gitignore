@@ -6,3 +6,4 @@ data/
 *.png
 *.jpeg
 *.webpage
+*.DS_Store
