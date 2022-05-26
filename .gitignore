@@ -7,3 +7,4 @@ data/
 *.jpeg
 *.webpage
 *.DS_Store
+*.svg
